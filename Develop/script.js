@@ -15,6 +15,31 @@ var generatePassword = function(){
 
   console.log(genLength);
 
+  window.alert("Please confirm whether or not you would like the following character types in your password.");
+
+  // boolean variables for password criteria
+  var passLow = window.confirm("Would you like Lowercase letters?");
+  //var passHigh = window.confirm("Would you like Uppercase letters?");
+  //var passNumeric= window.confirm("Would you like Numeric characters?");
+  // var passSpec = window.confirm("Would you like Special characters?");
+
+  if (passLow) {
+    passLow = genLower();
+  };
+};
+
+// Random generator functions
+
+var genLower = function(){
+  return String.fromCharCode(Math.floor(Math.random() * 26) + 97);
+};
+
+var genUpper = function(){
+  return String.fromCharCode(Math.floor(Math.random() *26) + 65);
+};
+
+var genNumber = function() {
+  return String.fromCharCode(Math.floor(Math.random() * 10) + 48);
 };
 
 // Get references to the #generate element
