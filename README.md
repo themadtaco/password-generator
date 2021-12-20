@@ -8,7 +8,9 @@ Password is developed using window prompts so the user can decide between length
 * CSS
 * HTML
 * Javascript
+
 ## Website
+https://themadtaco.github.io/password-generator/
 
 ## Creator
 Fabian Uribe
